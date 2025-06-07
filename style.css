@@ -1,12 +1,23 @@
 :root {
     --speed: 8s;
-    --count: 8;
-    --radius: 42%; /* distance from center */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
     width: 95%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     max-width: 600px;
     position: relative;
     border: solid 1px red;
@@ -20,13 +31,7 @@ main {
     overflow: hidden;
     border-radius: 8px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:
-        rotate(calc(360deg / var(--count) * var(--i)))
-        translateY(-1 * var(--radius))
-        rotate(calc(-360deg / var(--count) * var(--i)))
-        translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     animation: counter-rotate var(--speed) linear infinite;
     animation-timing-function: cubic-bezier(0.3, 0.1, 0.7, 0.9);
 }
@@ -37,12 +42,62 @@ main {
     object-fit: cover;
 }
 
+.img-view:nth-of-type(1) {
+    top: 10%;
+    left: 50%;
+}
+
+.img-view:nth-of-type(2) {
+    top: 20.7%;
+    left: 79.3%;
+}
+
+.img-view:nth-of-type(3) {
+    top: 50%;
+    left: 90%;
+}
+
+.img-view:nth-of-type(4) {
+    top: 79.3%;
+    left: 79.3%;
+}
+
+.img-view:nth-of-type(5) {
+    top: 90%;
+    left: 50%;
+}
+
+.img-view:nth-of-type(6) {
+    top: 79.3%;
+    left: 20.7%;
+}
+
+.img-view:nth-of-type(7) {
+    top: 50%;
+    left: 10%;
+}
+
+.img-view:nth-of-type(8) {
+    top: 20.7%;
+    left: 20.7%;
+}
+
+
 @keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes counter-rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(-360deg); }
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
 }
