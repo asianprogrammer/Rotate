@@ -15,13 +15,6 @@ Each image appears suspended, gently rotating as if pinned in space — no JavaS
 
 ![Screenshot](./Screenshot_20250608_102202.png)
 
-## 💬 Caption
-
-> **“Gravity of Imagination.  
-> Suspended in motion, stories orbit effortlessly.”**  
-> 🌀 *Pure CSS Magic — No Scripts Attached*  
-> 💬 **Comment "Code" for Open Source!** 🔓✨
-
 ## 📂 How to Use
 
 1. Clone the repo:
