@@ -26,5 +26,5 @@ Each image appears suspended, gently rotating as if pinned in space — no JavaS
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/gravity-orbit-css.git
-   cd gravity-orbit-css
+   git clone https://github.com/asianprogrammer/Rotate.git Rotate
+   cd Rotate
