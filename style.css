@@ -13,6 +13,7 @@ body {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 main {
@@ -20,7 +21,6 @@ main {
     aspect-ratio: 1/1;
     max-width: 600px;
     position: relative;
-    border: solid 1px red;
     animation: rotate var(--speed) linear infinite;
     animation-timing-function: cubic-bezier(0.3, 0.1, 0.7, 0.9);
 }
