@@ -45,42 +45,51 @@ main {
 .img-view:nth-of-type(1) {
     top: 10%;
     left: 50%;
+    z-index: 8;
 }
 
 .img-view:nth-of-type(2) {
     top: 20.7%;
     left: 79.3%;
+    z-index: 7;
 }
 
 .img-view:nth-of-type(3) {
     top: 50%;
     left: 90%;
+    z-index: 6;
 }
 
 .img-view:nth-of-type(4) {
     top: 79.3%;
     left: 79.3%;
+    z-index: 5;
 }
 
 .img-view:nth-of-type(5) {
     top: 90%;
     left: 50%;
+    z-index: 4;
 }
 
 .img-view:nth-of-type(6) {
     top: 79.3%;
     left: 20.7%;
+    z-index: 3;
 }
 
 .img-view:nth-of-type(7) {
     top: 50%;
     left: 10%;
+    z-index: 2;
 }
 
 .img-view:nth-of-type(8) {
     top: 20.7%;
     left: 20.7%;
+    z-index: 1;
 }
+
 
 
 @keyframes rotate {
